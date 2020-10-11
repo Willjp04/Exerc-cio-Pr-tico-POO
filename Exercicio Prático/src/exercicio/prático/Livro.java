@@ -18,4 +18,8 @@ public class Livro {
     private String leitor;
     
     
+    public void detalhes(){
+        
+    }
+    
 }
