@@ -15,8 +15,8 @@ public class Pessoa {
     private String sexo;
     
     
-    public void fazerAniversario(){
-        
+    public void fazerAniver(){
+        this.idade = this.idade +1;
     }
 
     public String getNome() {
