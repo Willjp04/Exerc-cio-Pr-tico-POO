@@ -23,8 +23,8 @@ public class ExercicioPrático {
       p[1]= new Pessoa ("Maria ", 33, "F");
       p[2]= new Pessoa ("Joyce " ,25,"F ");
 //LIVROS
-      l[0]= new Livro("") 
-      
+      l[0]= new Livro("Os Sertões " , "Euclides da Cunha ", 330, p[0]); 
+      l[1]= new Livro("Capitães de Areia ", "Jorge Amado ", 500,p[1]);
       
       
     }

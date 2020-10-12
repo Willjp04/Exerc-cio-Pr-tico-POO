@@ -25,13 +25,12 @@ public class Livro implements Publicacao {
     
     
 
-    public Livro(String titulo, String autor, int totPaginas, int pagAtual, Pessoa leitor) {
+    public Livro(String titulo, String autor, int totPaginas,  Pessoa leitor) {
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
         this.aberto = false;
-        this.pagAtual = 0;
-        this.pagAtual = pagAtual;
+        this.pagAtual = 1;
         this.leitor = leitor;
     }
 
