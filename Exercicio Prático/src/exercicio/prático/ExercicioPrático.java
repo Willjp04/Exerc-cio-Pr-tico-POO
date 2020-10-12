@@ -21,13 +21,15 @@ public class ExercicioPrático {
 //PESSOAS
       p[0]= new Pessoa("Joao ",25, "M");
       p[1]= new Pessoa ("Maria ", 33, "F");
+     
    //   p[2]= new Pessoa ("Joyce " ,25,"F ");
 //LIVROS
       l[0]= new Livro("Os Sertões " , "Euclides da Cunha ", 330, p[0]); 
       l[1]= new Livro("Capitães de Areia ", "Jorge Amado ", 500,p[1]);
-      l[0].abrir();
-      l[0].folhear(150);
-        System.out.println(l[0].detalhes());
+      l[1].abrir();
+      l[1].folhear(501);
+     l[1].avancarPag();
+        System.out.println(l[1].detalhes());
       
     }
     

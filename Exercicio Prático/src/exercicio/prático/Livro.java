@@ -5,6 +5,8 @@
  */
 package exercicio.prático;
 
+import javax.lang.model.SourceVersion;
+
 /**
  *
  * @author PORTOMASTER
@@ -19,7 +21,7 @@ public class Livro implements Publicacao {
 
     
     public String detalhes(){
-        return "Livro " + "titulo " + titulo + "\n, autor= " + autor + "\n, totPaginas= " + totPaginas + "\n, pagAtual= " + pagAtual + "\n, aberto= " + aberto + "\n, leitor= " + leitor.getNome() + '}';
+        return "Livro " + "titulo " + titulo + "\n, autor " + autor + "\n, totPaginas " + totPaginas + "\n, pagAtual " + pagAtual + "\n, aberto " + aberto + "\n, leitor " + leitor.getNome() ;
     }
     
     
@@ -94,25 +96,42 @@ public class Livro implements Publicacao {
 
     }
 
+    
     @Override
     public void folhear( int p) {
-        this.pagAtual = p;
+        if(p > this.totPaginas){
+            this.pagAtual=0;
+            
+        }else{
+            this.pagAtual = p;
+        }
+     
 
     }
 
     @Override
     public void avancarPag() {
-       this.pagAtual++;
-
+        if(this.totPaginas <= this.pagAtual){
+            this.pagAtual =0;
+        
+        }else{   
+            this.pagAtual++;
+        }
+    
     }
-
     @Override
     public void voltarPag() {
-        this.pagAtual--;
-
-    }
+        
+            this.pagAtual--;
+        }
+       
+        
+    
+   
+}
+    
 
   
-    }
+    
     
 
