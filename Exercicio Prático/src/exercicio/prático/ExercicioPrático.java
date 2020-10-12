@@ -15,7 +15,9 @@ public class ExercicioPrático {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+      Pessoa [] p = new Pessoa[3];
+      Livro [] l = new Livro [3];
       
-    }
+    
     
 }
