@@ -15,9 +15,19 @@ public class ExercicioPrático {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Pessoa [] p = new Pessoa[3];
-      Livro [] l = new Livro [3];
+      Pessoa[] p = new Pessoa[2];
+      Livro[] l = new Livro[3];
       
+//PESSOAS
+      p[0]= new Pessoa("Joao ",25, "M");
+      p[1]= new Pessoa ("Maria ", 33, "F");
+      p[2]= new Pessoa ("Joyce " ,25,"F ");
+//LIVROS
+      l[0]= new Livro("") 
+      
+      
+      
+    }
     
     
 }
